@@ -57,7 +57,7 @@ end
 Properties
 
 **root_password:** Set the _root_ password. _Default is no password_  
-**remote_root:** Create a remote _root_ login using the same password as **root_password**.  
+**remote_root:** Create a remote _root_ login using the same password as **root_password**. _This should only be set for local vagrant development._  
 
 ### Apache2
 
