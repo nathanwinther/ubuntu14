@@ -29,3 +29,12 @@ Vagrant.configure(2) do |config|
 end
 ````
 
+## Cookbook
+
+### Apache2
+
+Standard Ubuntu apache2 with the following modules installed and enabled:
+
+* mod_rewrite
+* mod_ssl
+
