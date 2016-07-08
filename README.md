@@ -1,4 +1,4 @@
-# Chef ubuntu-14 LAMP cookbook
+# Chef Ubuntu-14 LAMP cookbook
 
 ## Usage
 
@@ -16,7 +16,7 @@ Vagrant.configure(2) do |config|
 end
 ````
 
-### Include memcached
+### Include Memcached
 
 Vagrant config
 
@@ -100,7 +100,7 @@ Standard Ubuntu php5 with the following modules installed and enabled:
 
 ## Ad Hoc Examples
 
-### Webserver only. No database
+### Webserver Only
 
 Vagrant config
 
@@ -115,7 +115,7 @@ Vagrant.configure(2) do |config|
 end
 ````
 
-### Database and memcached only
+### Database Only
 
 Vagrant config
 
@@ -124,7 +124,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision "chef_zero" do |chef|
     chef.add_recipe "ubuntu14::apt"
     chef.add_recipe "ubuntu14::mysql"
-    chef.add_recipe "ubuntu14::memcached"
   end
 end
 ````
