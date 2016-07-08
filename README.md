@@ -83,3 +83,18 @@ Vagrant.configure(2) do |config|
 end
 ````
 
+### PHP5
+
+Standard Ubuntu php5 with the following modules installed and enabled:
+
+* php-apc
+* php5-curl
+* php5-gd
+* php5-imagick
+* php5-memcache
+* php5-mcrypt
+* php5-mysql
+* php5-xdebug
+* php5-xmlrpc
+* php5-xsl
+
