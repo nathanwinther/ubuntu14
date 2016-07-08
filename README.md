@@ -98,3 +98,34 @@ Standard Ubuntu php5 with the following modules installed and enabled:
 * php5-xmlrpc
 * php5-xsl
 
+## Ad Hoc Examples
+
+### Webserver only. No database
+
+Vagrant config
+
+````
+Vagrant.configure(2) do |config|
+  config.vm.provision "chef_zero" do |chef|
+    chef.add_recipe "ubuntu14::apt"
+    chef.add_recipe "ubuntu14::apache"
+    chef.add_recipe "ubuntu14::php"
+    chef.add_recipe "ubuntu14::mysqlclient"
+  end
+end
+````
+
+### Database and memcached only
+
+Vagrant config
+
+````
+Vagrant.configure(2) do |config|
+  config.vm.provision "chef_zero" do |chef|
+    chef.add_recipe "ubuntu14::apt"
+    chef.add_recipe "ubuntu14::mysql"
+    chef.add_recipe "ubuntu14::memcached"
+  end
+end
+````
+
